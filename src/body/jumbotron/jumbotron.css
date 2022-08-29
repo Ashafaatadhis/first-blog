@@ -1,0 +1,136 @@
+.jumbotron {
+  /* background-color: red; */
+  padding-top: 20vh;
+  padding-bottom: 130px;
+  height: 100vh;
+}
+.jumbotron .title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2d3748;
+}
+
+.jumbotron .title span {
+  color: #667fea;
+}
+
+.jumbotron .description {
+  color: #728197;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.jumbotron .contactMe {
+  background-color: #667fea;
+  padding: 15px 38px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  border-radius: 30px;
+  border: 0;
+}
+.jumbotron .aboutMe {
+  margin-left: 30px;
+  background-color: #667fea;
+  padding: 15px 38px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #79889d;
+  border-radius: 30px;
+  background-color: #edf2f7;
+  border: 3px solid #a0aec0;
+}
+
+@media only screen and (max-width: 1022px) {
+  .jumbotron {
+    /* box-sizing: border-box; */
+    padding-bottom: 60px;
+    text-align: center;
+    /* padding-top: 50px;
+    padding-bottom: 130px; */
+  }
+
+  .jumbotron .title {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #2d3748;
+  }
+
+  .jumbotron .description {
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .jumbotron .contactMe {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .jumbotron .aboutMe {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .jumbotron {
+    /* box-sizing: border-box; */
+    padding-bottom: 60px;
+    text-align: center;
+    /* padding-top: 50px;
+    padding-bottom: 130px; */
+  }
+  .jumbotron .title {
+    font-size: 27px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .jumbotron {
+    /* box-sizing: border-box; */
+    /* padding-bottom: 60px; */
+    text-align: center;
+    padding: 0;
+    padding-top: 20vh;
+    /* padding-bottom: 50px; */
+    /* background-color: red; */
+    /* padding-top: 50px;
+    padding-bottom: 130px; */
+  }
+  .jumbotron .title {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .jumbotron .description {
+    margin-top: -10px;
+    font-size: 16px;
+  }
+
+  .jumbotron .contactMe {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .jumbotron .aboutMe {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .jumbotron .aboutMe {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 336px) {
+  .jumbotron .aboutMe {
+    display: block;
+    margin: 10px auto;
+    /* text-align: center; */
+    /* font-size: 12px;*/
+  }
+}

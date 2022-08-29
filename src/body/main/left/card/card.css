@@ -1,0 +1,151 @@
+.card {
+  background-color: white;
+  display: grid;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0 10px 10px hsl(0deg 0% 0% / 5%);
+  transition: 0.25s ease;
+  grid-template-columns: 2fr 4fr;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  /* height: auto; */
+  /* width: fit-content; */
+  /* height: fit-content; */
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  /* height: fit-content; */
+  border-radius: 10px;
+}
+
+.card .card-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-info .card-title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.card .card-info .card-category {
+  font-size: 14px;
+  color: #7e8ca0;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 6px;
+  background-color: #edf2f7;
+  font-weight: 600;
+}
+
+.card .card-info .card-desc {
+  font-size: 14px;
+  line-height: 23px;
+  color: #728197;
+  font-weight: 400;
+}
+
+.card .profile-wrapper {
+  width: 56px;
+  height: 56px;
+  /* padding: 0; */
+}
+.card .profile-wrapper img {
+  height: 100%;
+  border-radius: 50%;
+  /* width: 55px; */
+}
+
+.card .wrapper-flex {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .wrapper a {
+  color: #7f8ca0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card .wrapper {
+  padding: 0;
+  width: 100%;
+  line-height: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card .wrapper p {
+  margin-bottom: 0;
+  color: #7e8ca0;
+}
+
+@media only screen and (max-width: 605px) {
+  .card .card-info .card-title {
+    /* margin-bottom: auto; */
+    font-size: 18px;
+  }
+
+  .card .wrapper-flex {
+    /* background-color: red; */
+    margin-top: 20px;
+  }
+
+  .card .card-info .card-category {
+    font-size: 13px;
+  }
+
+  .card .card-info .card-desc {
+    /* font-size: 13px; */
+    display: none;
+  }
+
+  .card .profile-wrapper {
+    width: 50px;
+    display: none;
+    height: 50px;
+    /* padding: 0; */
+  }
+
+  .card .wrapper {
+    margin-right: 10px;
+    /* display: flex; */
+    /* line-height: 0; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card .wrapper a {
+    margin: 0;
+    display: inline;
+  }
+  .card .wrapper p {
+    margin: 0;
+  }
+
+  .card .wrapper-flex {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .card {
+    display: block;
+  }
+  .card .card-banner {
+    display: none;
+  }
+
+  .card .card-info {
+    /* background-color: red; */
+    /* width: 100%; */
+  }
+}
