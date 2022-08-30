@@ -1,17 +1,13 @@
 import React from "react";
 import "./jumbotron.css";
 
-export default function Jumbotron() {
+const Jumbotron = () => {
   return (
     <section className="jumbotron">
-      <div className="container">
-        <h1 className="title">
-          Hi, I'm <span>Adhis Mauliyahsa Ashafaat</span>. <div>Web Developer</div>
-        </h1>
-        <p className="description">Still learning stack MERN</p>
-        <button className="contactMe">Contact Me</button>
-        <button className="aboutMe">About Me</button>
-      </div>
+      <h1 className="jumbotron-title">Adhis Blog</h1>
+      <p className="jumbotron-desc">Your source of great content</p>
     </section>
   );
-}
+};
+
+export default Jumbotron;

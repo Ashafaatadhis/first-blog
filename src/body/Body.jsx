@@ -1,12 +1,23 @@
-import React from "react";
-import Jumbotron from "./jumbotron/Jumbotron";
-import Main from "./main/Main";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./home/Home";
+import Post from "./post/Post";
 
-export default function Body() {
+const Body = () => {
+  useEffect(() => {
+    document.title = "Adhis Blog";
+  }, []);
   return (
-    <>
-      <Jumbotron />
-      <Main />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="post" element={<Post />} />
+          <Route path="*" element={<h1>unddfined</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
+export default Body;

@@ -1,0 +1,147 @@
+.post .post-jumbotron {
+  background-color: #1a1e21;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* padding-bottom: 100vh/; */
+  flex-direction: column;
+  color: #fff;
+}
+
+.post {
+  padding-bottom: 100px;
+  /* background-color: red; */
+}
+
+.post .post-jumbotron .container {
+  /* background-color: red; */
+  /* margin-top: 200px/; */
+  text-align: center;
+  max-width: 1000px;
+  padding: 120px 20px;
+  padding-bottom: 0;
+}
+
+.post .post-ini-article .container {
+  text-align: center;
+  max-width: 1000px;
+  margin-top: 20rem;
+  padding: 0px 20px;
+  padding-bottom: 0;
+}
+
+/* .post .post-ini-article .container  */
+
+.post .post-back a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ff9340;
+}
+
+.post .post-img {
+  /* position: relative; */
+  /* margin-top: -14vw; */
+  margin-top: 20px;
+  height: 500px;
+  /* background-color: #ff9340; */
+  /* height: 500px; */
+}
+
+.post .post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post .post-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  margin-top: 20px;
+  line-height: 1.1;
+  font-size: 3.5rem;
+  /* position: relative; */
+}
+
+.post .post-article {
+  /* all: unset/; */
+  /* line-height: normal; */
+
+  /* background-color: red; */
+  color: #000;
+  font-size: 18px;
+  text-align: justify;
+  /* background-color: red; */
+}
+
+/* .jumbotron .jumbotron-desc {
+  font-size: 1.5rem;
+} */
+
+@media only screen and (max-width: 798px) {
+  .post .post-jumbotron {
+    height: 500px;
+  }
+  .post .post-title {
+    font-size: 2.4rem;
+  }
+
+  .post .post-img {
+    height: 350px;
+  }
+
+  .post .post-article {
+    font-size: 16px;
+  }
+
+  .post .post-ini-article .container {
+    margin-top: 10rem;
+  }
+
+  .post .post-back a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .post .post-jumbotron {
+    height: 450px;
+  }
+
+  .post .post-title {
+    font-size: 2rem;
+  }
+
+  .post .post-img {
+    height: 400px;
+  }
+
+  .post .post-title {
+    -webkit-line-clamp: 3; /* number of lines to show */
+  }
+
+  .post .post-ini-article .container {
+    margin-top: 8rem;
+    padding: 0px 10px;
+  }
+  .post .post-jumbotron .container {
+    margin-top: 8rem;
+    padding: 0px 10px;
+  }
+
+  .post .post-back a {
+    font-size: 1rem;
+  }
+
+  .post .post-img {
+    height: 250px;
+  }
+
+  .post .post-article {
+    font-size: 14px;
+  }
+}

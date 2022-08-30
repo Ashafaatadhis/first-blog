@@ -1,0 +1,45 @@
+.category .container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.category .container a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 2px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.category .container a:hover {
+  background-color: #ff9340;
+  color: #fff;
+}
+
+@media only screen and (max-width: 798px) {
+  .category .container {
+    column-gap: 15px;
+  }
+  .category .container a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .content .container {
+    /* display: block; */
+    grid-template-columns: auto;
+    /* gap: ; */
+  }
+  .category .container {
+    column-gap: 5px;
+  }
+
+  .category .container a {
+    font-size: 0.95rem;
+  }
+}
