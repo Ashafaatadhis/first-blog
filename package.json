@@ -1,7 +1,7 @@
 {
   "engines": {
-    "node": "YOUR_VERSION_OF_NODE",
-    "npm": "YOUR_VERSION_OF_NPM"
+    "node": "16.17.0",
+    "npm": "8.15.0"
   },
   "name": "client",
   "version": "0.1.0",
