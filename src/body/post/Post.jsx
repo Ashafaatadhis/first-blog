@@ -9,7 +9,7 @@ const Post = () => {
           <div className="post-back">
             <a href="/">Back To Home</a>
           </div>
-          <h1 className="post-title">What are you doing when in was born in 5000 year ago</h1>
+          <h1 className="post-title">How to enter isekai without dead and i will for your enemies sakabum</h1>
           <div className="post-img">
             <img src="https://placeimg.com/1000/500/any" alt="" />
           </div>

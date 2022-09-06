@@ -1,0 +1,54 @@
+.login {
+  background-color: #1a1e21;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h1 {
+  text-align: center;
+}
+
+.login input#username::placeholder,
+.login input#password::placeholder {
+  font-size: 1rem;
+  /* padding: 10px; */
+  font-family: "Poppins", sans-serif;
+  color: #1a1e21;
+  /* line-height: 50%/; */
+}
+
+.login input {
+  font-size: 1rem;
+  padding: 10px;
+  height: 30px;
+  background-color: #e6e6e6;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.login button {
+  width: 100%;
+  border: 0;
+  background-color: #ff9340;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 35px;
+}
+
+.login .container {
+  padding: 30px;
+  padding-bottom: 50px;
+  width: 400px;
+  /* height: 500px; */
+  /* display: flex;
+  flex-direction: column; */
+  background-color: white;
+}

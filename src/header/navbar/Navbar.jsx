@@ -1,7 +1,10 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const location = useLocation();
+  console.log(location);
   document.addEventListener("scroll", (e) => {
     if (window.scrollY > 0) {
       document.getElementById("nav").style.backgroundColor = "white";
@@ -20,9 +23,15 @@ const Navbar = () => {
         <div className="nav-title" id="nav-title">
           Ad<span>his</span>
         </div>
-        <div className="nav-link">
-          <a href="#">Login</a>
-        </div>
+        {location.pathname == "/admin" ? (
+          <div className="nav-link">
+            <Link to="/logout">Logout</Link>
+          </div>
+        ) : (
+          <div className="nav-link">
+            <Link to="/login">Login</Link>
+          </div>
+        )}
       </div>
     </nav>
   );
